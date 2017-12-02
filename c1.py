@@ -137,7 +137,7 @@ if __name__ == '__main__':
         '''###############################
 
     def KnightMovement(Pieces, chessboard):
-        if (pieces == knight)
+        if (Pieces.kind == "knight")
         i,j = row,column
             resolve = []    #Replaces set index
 
