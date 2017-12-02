@@ -5,6 +5,7 @@
 
 import numpy as np
 import string
+import math
 
 
 class Pieces(object):
@@ -88,7 +89,7 @@ if __name__ == '__main__':
     
     def createboard():
         alphabet = list(string.ascii_lowercase)
-        chessboard = [[1] * 8 for i in range(8)] # Change into a 2d Array
+        chessboard = [[1] * 8 for i in range(8)] # Change into a 2d Array 
         for i in range(0,8):
             for j in range(0,8):    
                 chessboard[i][j] = str(i) + alphabet[j]
@@ -96,23 +97,23 @@ if __name__ == '__main__':
 
     def populate(chessboard):
         
-        chessboard[0][0] = rook3
-        chessboard[0][1] = knight3
-        chessboard[0][2] = bishop3
-        chessboard[0][3] = king2
-        chessboard[0][4] = queen2
-        chessboard[0][5] = bishop4
-        chessboard[0][6] = knight4
-        chessboard[0][7] = rook4
+        chessboard[0][0] = rook3.kind
+        chessboard[0][1] = knight3.kind
+        chessboard[0][2] = bishop3.kind
+        chessboard[0][3] = king2.kind
+        chessboard[0][4] = queen2.kind
+        chessboard[0][5] = bishop4.kind
+        chessboard[0][6] = knight4.kind
+        chessboard[0][7] = rook4.kind
         
-        chessboard[7][0] = rook1
-        chessboard[7][1] = knight1
-        chessboard[7][2] = bishop1
-        chessboard[7][3] = queen1
-        chessboard[7][4] = king1
-        chessboard[7][5] = bishop2
-        chessboard[7][6] = knight2
-        chessboard[7][7] = rook2
+        chessboard[7][0] = rook1.kind
+        chessboard[7][1] = knight1.kind
+        chessboard[7][2] = bishop1.kind
+        chessboard[7][3] = queen1.kind
+        chessboard[7][4] = king1.kind
+        chessboard[7][5] = bishop2.kind
+        chessboard[7][6] = knight2.kind
+        chessboard[7][7] = rook2.kind
         
         for i in range(0,8):
             chessboard[1][i] = pawn_black[i] 
@@ -122,6 +123,91 @@ if __name__ == '__main__':
         
     chessboard = createboard()
     print (populate(chessboard))
+
+'''###############################
+    def movement(Pieces, chessboard):
+        
+    -Rook
+    -Knight
+    -Bishop
+    -Queen
+    -King
+    -Pawn       
+
+        '''###############################
+
+    def KnightMovement(Pieces, chessboard):
+        if (pieces == knight)
+        i,j = row,column
+            resolve = []    #Replaces set index
+
+            # TopLeft
+            try:
+                Lvalue = chessboard[i-1][j+2]
+                resolve.append([i-1,j+2])
+            except
+                pass
+
+            # TopRight
+            try:
+                Lvalue = chessboard[i+1][j+2]
+                resolve.append([i+1,j]+2)
+            except
+                pass
+
+            # RightTop
+            try:
+                Lvalue = chessboard[i+2][1+j]
+                resolve.append([i+2, j+1])
+            except
+                pass
+
+            # LeftTop
+            try:
+                Lvalue = chessboard[i-2][1+j]
+                resolve.append([i-2, j+1])
+            except
+                pass
+            # Null
+            try:
+                Lvalue = chessboard[i][j]
+                resolve.append([i, j])
+            except
+                pass
+
+            # LeftBottom
+            try:
+                Lvalue = chessboard[i-2][j-1]
+                resolve.append([i-2, j-1])
+            except
+                pass
+            # RightBottom
+            try:
+                Lvalue = chessboard[i+2][j-1]
+                resolve.append([i+2, j-1])
+            except
+                pass
+
+            # BottomLeft
+            try:
+                Lvalue = chessboard[i-1][j-2]
+                resolve.append([i-1, j+2])
+            except
+                pass
+
+            # BottomRight
+            try:
+                Lvalue = chessboard([i+1][j-2])
+                resolve.append([i+1, j-2])
+            except
+                pass
+
+
+    def RookMovement(Pieces, chessboard):
+        resolve 
+
+    def BishopMovement(Pieces, chessboard):
+
 
 
 
@@ -150,7 +236,7 @@ if __name__ == '__main__':
             white  = True
             black = False
             print ("\n White player will commence!")
-            else
+         else
             white = False
             black = True
             print ("\n White player will commence!")
