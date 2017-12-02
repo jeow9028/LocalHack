@@ -4,19 +4,18 @@ December 2nd 2017
 Local Hack Day
 ###########################################################
 
-Collaborating with Tanay
+Participants: JC Owens, Tanay Choudhary
 
-Descroption:
-	We are designing a chess board where certain pieces have specifc functions devided into different classes
-	Making a 2D aray of a size 8x8
-	Pieces:
-	- Pawns
-	- Rook
-	- Knight
-	- Bishop
-	- Queee
-	- King
+Description: 
+Designing a chessboard using Python. The idea is to create a 2-D array of size 8x8. The pieces in a chess game are:
 
-	Each class has a specific movement
+16x Pawns, 4x Rooks, 4x Knights, 4x Bishops, 2x Queens and 2x Kings (Divided in the the colors black and white)
 
+Each of the pieces has been made using a class called Pieces which holds the following characteristics:
+	kind - kind of the piece
+	color - color of the piece (Either black/white)
+	life - 1(default) or 0 (When a piece dies in chess)
 
+These pieces were then used to populate the chessboard and now we plan to work on the movement functions.
+
+We have also planned to create separate functions for the movement of each of the characters. 
