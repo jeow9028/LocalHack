@@ -1,6 +1,6 @@
 # Local Hack Day, December 2nd 2017
 
-**Participants:** Jean-Christophe Owens, Tanay Choudhary, John Letey
+**Participants:** Jean-Christophe Owens, Tanay Choudhary, and John Letey
 
 **Description:** Designing a chessboard using Python. The idea is to create a 2-D array of size 8x8. The pieces in a chess game are: 16x Pawns, 4x Rooks, 4x Knights, 4x Bishops, 2x Queens and 2x Kings (Divided in the the colors black and white)
 
