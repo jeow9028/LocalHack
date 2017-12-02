@@ -6,8 +6,8 @@
 
 Each of the pieces has been made using a class called Pieces which holds the following characteristics:
 
-  kind - kind of the piece
-	color - color of the piece (Either black/white)
-	life - 1(default) or 0 (When a piece dies in chess)
+- the kind of the piece
+- the color of the piece (Either black/white)
+- the life which is either 1(default) or 0 (When a piece dies in chess)
   
 These pieces were then used to populate the chessboard and now we plan to work on the movement functions. We have also planned to create separate functions for the movement of each of the characters.
